@@ -1460,3 +1460,11 @@ body.glightbox-open {
         @media (max-width: 900px) {
             .social-links { justify-content: center; }
         }
+
+/* GALERIE GLIGHTBOX FIX */
+.glightbox-container {
+    z-index: 999999 !important;
+}
+body.glightbox-open {
+    overflow: hidden;
+}
