@@ -1465,6 +1465,3 @@ body.glightbox-open {
 .glightbox-container {
     z-index: 999999 !important;
 }
-body.glightbox-open {
-    overflow: hidden;
-}
