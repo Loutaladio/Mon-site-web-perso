@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://loutaladio.com/sitemap.xml
+Sitemap: https://loutaladiodanickarcel.vercel.app/sitemap.xml
