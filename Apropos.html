@@ -34,7 +34,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <!-- GLightbox CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css" />
 
     <script type="application/ld+json">
     {
@@ -343,10 +343,29 @@
     <script src="main.js"></script>
     
     <!-- GLightbox JS -->
-<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/js/glightbox.min.js"></script>
 <script>
-  const lightbox = GLightbox({
-    selector: '.glightbox'
+  document.addEventListener('DOMContentLoaded', function() {
+    if (typeof GLightbox !== 'undefined') {
+      const lightbox = GLightbox({
+        selector: '.glightbox',
+        touchNavigation: true,
+        loop: true,
+        autoplayVideos: false,
+        zoomable: true,
+        draggable: true,
+        openEffect: 'fade',
+        closeEffect: 'fade',
+        slideEffect: 'slide',
+        moreLength: 60,
+        moreText: 'Voir plus',
+        closeButton: true,
+        preload: false
+      });
+      console.log('GLightbox initialized successfully');
+    } else {
+      console.error('GLightbox is not loaded');
+    }
   });
 </script>
 
