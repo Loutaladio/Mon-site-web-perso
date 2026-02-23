@@ -920,14 +920,14 @@ section[id] {
 
 /* Force la visionneuse GLightbox à passer devant le header et le footer */
 .glightbox-container {
-    z-index: 999999 !important; /* Priorité maximale */
+    z-index: 9999999 !important; /* Priorité maximale */
     position: fixed !important;
 }
 
 /* Empêche le site de défiler derrière quand une photo est ouverte */
-body.glightbox-open {
+/* body.glightbox-open {
     overflow: hidden;
-}
+} */
 
 /* Assure que les images de la galerie ne sont pas écrasées sur mobile */
 .gallery-item img {
@@ -1463,5 +1463,5 @@ body.glightbox-open {
 
 /* GALERIE GLIGHTBOX FIX */
 .glightbox-container {
-    z-index: 999999 !important;
+    z-index: 9999999 !important;
 }
