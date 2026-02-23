@@ -916,6 +916,25 @@ section[id] {
     font-size: 1.1rem;
 }
 
+/* --- CORRECTIF GALERIE GÉNIE INFORMATIQUE --- */
+
+/* Force la visionneuse GLightbox à passer devant le header et le footer */
+.glightbox-container {
+    z-index: 999999 !important; /* Priorité maximale */
+    position: fixed !important;
+}
+
+/* Empêche le site de défiler derrière quand une photo est ouverte */
+body.glightbox-open {
+    overflow: hidden;
+}
+
+/* Assure que les images de la galerie ne sont pas écrasées sur mobile */
+.gallery-item img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover;
+}
 
 
 
