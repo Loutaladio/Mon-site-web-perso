@@ -25,6 +25,26 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const navUl = document.querySelector('.NavBarre ul');
+
+    if (hamburger && navUl) {
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            navUl.classList.toggle('active');
+        });
+
+        // Fermer le menu quand on clique sur un lien
+        const navLinks = navUl.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                navUl.classList.remove('active');
+            });
+        });
+    }
+
     // Animation au scroll
     const observerOptions = {
         threshold: 0.1,
@@ -40,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
 
     // Observer les éléments à animer
-    const animateElements = document.querySelectorAll('.content, .hero-btns, .social-links');
+    const animateElements = document.querySelectorAll('.content, .hero-btns, .social-links, .inspiration-content, .video-section, .story-content');
     animateElements.forEach(el => observer.observe(el));
 });
 
