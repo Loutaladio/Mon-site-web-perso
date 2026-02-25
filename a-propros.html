@@ -220,7 +220,7 @@
             <div class="video-section">
                 <h3 style="color: #FF9E00; text-align: center;">Découvrez David Goggins : La Puissance du Mental</h3>
                 <div style="display: flex; justify-content: center; margin: 20px 0;">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9Q0j3TZgJ8g?rel=0" title="David Goggins - Can't Hurt Me | Best Motivational Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 10px; box-shadow: 0 0 20px rgba(255, 158, 0, 0.3);" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/S2eso4vLPms" title="David Goggins - Can't Hurt Me | Best Motivational Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 10px; box-shadow: 0 0 20px rgba(255, 158, 0, 0.3);" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <p style="text-align: center; color: #ccc;">Cette vidéo incarne parfaitement les valeurs que je défends : discipline, dépassement de soi, et transformation personnelle. Comme David, je crois que le succès vient de l'intérieur.</p>
                 <p style="text-align: center; font-size: 12px; color: #666;">Note : Si la vidéo ne se charge pas sur localhost, elle fonctionnera normalement une fois déployée en ligne.</p>
@@ -445,7 +445,12 @@
         moreLength: 60,
         moreText: 'Voir plus',
         closeButton: true,
-        preload: false
+        preload: false,
+        // Configuration pour éviter les problèmes d'accessibilité
+        hideScrollbar: false,
+        focusTrap: false,
+        // Désactiver l'application automatique d'aria-hidden
+        ariaHidden: false
       });
       console.log('GLightbox initialized successfully');
     } else {

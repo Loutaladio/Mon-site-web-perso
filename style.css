@@ -1466,6 +1466,21 @@ section[id] {
     z-index: 9999999 !important;
 }
 
+/* Correction du problème d'accessibilité aria-hidden avec GLightbox */
+.glightbox-open [aria-hidden="true"] .glightbox {
+  display: none !important;
+}
+
+/* Assurer que les éléments focusables ne sont pas cachés */
+.glightbox-open [aria-hidden="true"] a,
+.glightbox-open [aria-hidden="true"] button,
+.glightbox-open [aria-hidden="true"] input,
+.glightbox-open [aria-hidden="true"] select,
+.glightbox-open [aria-hidden="true"] textarea {
+  pointer-events: none !important;
+  opacity: 0 !important;
+}
+
 /* INSPIRATION MENTOR SECTION */
 .inspiration-content {
     display: flex;
