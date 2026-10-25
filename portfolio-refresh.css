@@ -47,7 +47,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   padding: 8px 13px; border-radius: 10px; color: #34414d; font-size: .9rem;
   font-weight: 650; text-decoration: none; white-space: nowrap; transition: background .18s ease, color .18s ease;
 }
-.NavBarre a:hover, .NavBarre a:focus-visible { color: var(--pr-ink); background: #f3eadc; }
+.NavBarre a:hover, .NavBarre a:focus-visible { color: var(--pr-ink); background: #00F0FF; }
 .NavBarre ul li:first-child a { color: var(--pr-accent-deep) !important; background: #e8fbfe; }
 .hamburger { border: 0; border-radius: 10px; }
 .hamburger span { background: var(--pr-ink); box-shadow: none; }
@@ -228,7 +228,7 @@ footer a:hover { color: #fff; text-decoration: underline; }
 
 /* En-tête de navigation identifiable et titre unique par breakpoint */
 .nav-brand { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 10px; padding: 4px 12px 4px 4px; color: var(--pr-ink) !important; font-size: .9rem !important; font-weight: 760 !important; text-decoration: none; }
-.nav-monogram { display: grid; width: 38px; height: 38px; place-items: center; border-radius: 11px; background: var(--pr-ink); color: #f5c27a; font-size: .9rem; letter-spacing: -.04em; }
+.nav-monogram { display: grid; width: 38px; height: 38px; place-items: center; border-radius: 11px; background: var(--pr-ink); color: #00F0FF; font-size: .9rem; letter-spacing: -.04em; }
 .Container_NaveBarre .NavBarre { justify-content: space-between; }
 #Accueil-contenu .textChangerInvisible { display: none; }
 @media (min-width: 861px) {
@@ -260,7 +260,7 @@ body > br { display: none; }
   .livre-card > div { width: 100%; }
 }
 
-.hero-eyebrow { margin: 0 0 10px; color: #f2b65e; font-size: .86rem; font-weight: 750; letter-spacing: .12em; line-height: 1.6; text-transform: uppercase; }
+.hero-eyebrow { margin: 0 0 10px; color: #00F0FF; font-size: .86rem; font-weight: 750; letter-spacing: .12em; line-height: 1.6; text-transform: uppercase; }
 .book-card-text { align-items: stretch; }
 .book-details--full { width: 100%; min-width: 0; }
 .book-details--full h3 { margin: 0 0 10px; color: var(--pr-ink); font-size: 1.12rem; line-height: 1.35; }
@@ -639,19 +639,19 @@ body { background: radial-gradient(circle at 82% -12%, rgba(0,240,255,.045), tra
 #Header { background: rgba(5,6,7,.94); border-bottom-color: rgba(0,240,255,.12); }
 .Container_NaveBarre .NavBarre { background: rgba(12,14,17,.96); border-color: rgba(0,240,255,.16); box-shadow: 0 16px 40px rgba(0,0,0,.48); }
 #Accueil { background: radial-gradient(circle at 78% 26%, rgba(0,240,255,.055), transparent 24rem), linear-gradient(135deg, #040506 0%, #0a0c0f 58%, #050607 100%); }
-#Accueil::before { border-color: rgba(225,179,79,.24); box-shadow: 0 0 0 48px rgba(0,240,255,.035), 0 0 0 96px rgba(0,240,255,.016); }
+#Accueil::before { border-color: rgba(0,240,255,.24); box-shadow: 0 0 0 48px rgba(0,240,255,.035), 0 0 0 96px rgba(0,240,255,.016); }
 #Accueil-contenu h1 { color: #faf8f2; }
 .hero-eyebrow, #Accueil-contenu .textChangerVisible h2, #Accueil-contenu .textChangerInvisible h2, .hero-role { color: var(--pr-gold-bright) !important; }
 #Accueil-contenu .Texte > p, section p, .section-intro, .texte-ceo p, .project-content p, .book-details--full p:not(.book-edition) { color: var(--pr-ink-soft); }
-#Accueil-contenu .mon-image { border-color: rgba(225,179,79,.38); box-shadow: 14px 14px 0 var(--pr-gold), 0 30px 78px rgba(0,0,0,.70); }
+#Accueil-contenu .mon-image { border-color: rgba(0,240,255,.38); box-shadow: 14px 14px 0 var(--pr-gold), 0 30px 78px rgba(0,0,0,.70); }
 #Accueil .btn-yellow, .btn-demo, .book-action-links a:first-child, .entity-link, .book-action-link, .contact-form button, .final-cta-actions .btn-yellow { background: linear-gradient(135deg, #00F0FF, #01035D); color: #090a0b; border-color: #01035D; box-shadow: 0 12px 32px rgba(0,240,255,.20); }
-#Accueil .btn-yellow-outline, .final-cta-actions .btn-yellow-outline { color: #00F0FF; border-color: rgba(225,179,79,.50); background: rgba(0,240,255,.035); }
+#Accueil .btn-yellow-outline, .final-cta-actions .btn-yellow-outline { color: #00F0FF; border-color: rgba(0,240,255,.50); background: rgba(0,240,255,.035); }
 #Accueil .btn-yellow:hover, #Accueil .btn-yellow-outline:hover, .btn-demo:hover, .book-action-links a:hover, .entity-link:hover, .book-action-link:hover, .contact-form button:hover, .final-cta-actions a:hover { background: #edc362; color: #090a0b; border-color: #edc362; }
 a, .hero-aux-links a, .hero-isni a, footer a { color: #00F0FF; }
 #Accueil .social-icon { background: #101215; border-color: #303136; }
 #Accueil .social-icon:hover { background: #01035D; border-color: #00F0FF; }
 .project-card, .apropos-card, .blog-card, .service, .livre-card, .bande, .bande2, .carte-ceo-pro, .carte-dgclub, .contact-form, .contact-info, .proof-card, .featured-proof, .metrics-strip, .entity-intro, .featured-books, .dgclub-feature, .final-cta { background: linear-gradient(145deg, #16191d, #0d0f12); border-color: rgba(0,240,255,.15); box-shadow: 0 18px 52px rgba(0,0,0,.34); }
-.project-card:hover, .service:hover, .blog-card:hover, .proof-card:hover, .featured-book-card:hover, .livre-card:hover { border-color: rgba(225,179,79,.36); box-shadow: 0 24px 58px rgba(0,0,0,.52); }
+.project-card:hover, .service:hover, .blog-card:hover, .proof-card:hover, .featured-book-card:hover, .livre-card:hover { border-color: rgba(0,240,255,.36); box-shadow: 0 24px 58px rgba(0,0,0,.52); }
 .tech-badge, .identity-badges span { color: #00F0FF; background: rgba(0,240,255,.10); border-color: rgba(0,240,255,.34); }
 .service-price, .proof-label, .proof-link, .book-edition, .section-kicker { color: #00F0FF !important; }
 .texte-dgclub li, #parcours_Scolaire li { background: #111316; color: #c6c4bd; border-color: rgba(255,255,255,.065); }
@@ -770,3 +770,30 @@ span[style*="#00F0FF"], span[style*="#00F0FF"] { color: var(--dg-cyan) !importan
 
 /* Compatibilité avec les anciennes pages : aucune valeur inline dorée ne doit réapparaître. */
 *[style*="#D4AF37"], *[style*="#d4af37"], *[style*="#F0C040"], *[style*="#f0c040"] { color: var(--dg-cyan) !important; }
+
+/* Page Livres : largeur éditoriale confortable, cartes respirantes et lecture prioritaire. */
+#livres, #oeuvres { width: min(100%, 1280px); max-width: 1280px; padding-inline: clamp(20px, 4vw, 52px); }
+#livres .bande_Annonce { width: 100%; box-sizing: border-box; }
+#oeuvres .livres-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; align-items: stretch; width: 100%; }
+#oeuvres .livre-card { display: grid; grid-template-columns: minmax(110px, 150px) minmax(0, 1fr); align-items: start; gap: 22px; min-width: 0; min-height: 100%; padding: 24px; border-radius: 18px; }
+#oeuvres .livre-img { width: 100%; height: 190px; margin: 0; object-fit: contain; border-radius: 10px; background: #fff; box-shadow: 0 10px 24px rgba(0,0,0,.30); }
+#oeuvres .book-details--full, #oeuvres .livre-card > div { min-width: 0; width: auto; }
+#oeuvres .livre-card h3, #oeuvres .livre-card h4 { margin-top: 0; line-height: 1.25; }
+#oeuvres .book-action-links { align-items: stretch; }
+#oeuvres .book-action-links a { flex: 0 1 auto; }
+@media (max-width: 1100px) {
+  #oeuvres .livres-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 720px) {
+  #livres, #oeuvres { width: 100%; padding-inline: 18px; }
+  #oeuvres .livres-list { grid-template-columns: 1fr; gap: 18px; }
+  #oeuvres .livre-card { grid-template-columns: minmax(100px, 130px) minmax(0, 1fr); gap: 18px; padding: 18px; }
+  #oeuvres .livre-img { height: 175px; }
+}
+@media (max-width: 460px) {
+  #oeuvres .livre-card { grid-template-columns: 1fr; }
+  #oeuvres .livre-img { width: min(100%, 150px); height: 210px; margin-inline: auto; }
+}
+
+/* Aucun ancien accent jaune/orange ne doit rester visible sur la page Livres. */
+#livres *, #oeuvres * { --accent-hover: var(--dg-cyan); }

@@ -164,7 +164,7 @@
     font-weight: 520;
 }
 #NavBarre2 a:hover{
-    color: #ffda79;
+    color: #00F0FF;
 }
 
 /* imageProfile */
@@ -217,7 +217,7 @@
     --main-bg-dark: #0a0a0a;
     --main-bg-light: #f8f9fa;
     --accent: #FF9E00;
-    --accent-hover: #ffd500ab;
+    --accent-hover: #00F0FF;
     --nav-bg-dark: #111827;
 }
 
@@ -377,7 +377,7 @@ img{
     margin-top: 120px;
     position: relative;
     /* background-color: red; */
-    background: linear-gradient(120deg, #11111149 60%, #ff9d0052 100%);
+    background: linear-gradient(120deg, #11111149 60%, rgba(0,240,255,.18) 100%);
 }
 
 /* style de BannerTexteImage & ImageProfile */
@@ -538,7 +538,7 @@ p{
         .social-icon.x:hover { color: #000; }
         .social-icon.linkedin:hover { color: #0A66C2; }
         .social-icon.github:hover { color: #333; }
-        .social-icon.aboutme:hover { color: #ffb300; }
+        .social-icon.aboutme:hover { color: #00F0FF; }
         .social-icon.telegram:hover { color: #229ED9; }
         @media (max-width: 900px) {
             .social-links { justify-content: center; }
@@ -552,7 +552,7 @@ p{
 }
 
         .btn-yellow {
-            background: #ff7300;
+            background: #00F0FF;
             color: #10182a;
             font-weight: 700;
             border: none;
@@ -561,7 +561,7 @@ p{
             font-size: 1.08rem;
             text-decoration: none;
             transition: background 0.18s, color 0.18s, box-shadow 0.18s;
-            box-shadow: 0 0 12px 0 #ffd60044;
+            box-shadow: 0 0 12px 0 rgba(0,240,255,.20);
         }
         .btn-yellow:hover {
             background: #fff;
@@ -754,7 +754,7 @@ section[id] {
 /* CARTE DG CLUB */
 .carte-dgclub {
   background: #2a2b2b8c;
-  border-left: 5px solid #ff9800; 
+  border-left: 5px solid #00F0FF; 
   /* Couleur accent DG Club */
   border-radius: 12px;
   box-shadow: 0 0 40px 0 rgba(255,255,255,0.08);
@@ -795,7 +795,7 @@ section[id] {
   content: "✔";
   position: absolute;
   left: 0;
-  color: #ff9800;
+  color: #00F0FF;
   font-weight: bold;
 }
 
@@ -893,7 +893,7 @@ section[id] {
 .service-price {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #ffd700;
+    color: #00F0FF;
     margin: 10px 0;
 }
 
@@ -1454,7 +1454,7 @@ section[id] {
         .social-icon.x:hover { color: #000; }
         .social-icon.linkedin:hover { color: #0A66C2; }
         .social-icon.github:hover { color: #333; }
-        .social-icon.aboutme:hover { color: #ffb300; }
+        .social-icon.aboutme:hover { color: #00F0FF; }
         .social-icon.telegram:hover { color: #229ED9; }
        
         @media (max-width: 900px) {
