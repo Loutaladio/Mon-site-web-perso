@@ -288,7 +288,7 @@ body { font-size: 18px; }
 section p, .section-intro, .contact-intro { font-size: 1.125rem; }
 #Accueil-contenu .Texte > p { font-size: 1.125rem; }
 #Accueil .btn-yellow, #Accueil .btn-yellow-outline { font-size: 1.0625rem; }
-#Accueil .social-links a:not([href^="https://wa.me"]):not([href*="linkedin.com"]):not([href*="github.com"]):not([href*="instagram.com"]):not([href*="@DGClubOfficiel"]) { display: none; }
+#Accueil .social-links a:not([href^="https://wa.me"]):not([href*="linkedin.com"]):not([href*="github.com"]):not([href*="instagram.com"]):not([href*="facebook.com"]):not([href*="@DGClubOfficiel"]) { display: none; }
 .hero-aux-links { margin: -6px 0 20px; color: #d7dde1; font-size: 1rem; }
 .hero-aux-links a { color: #65edf7; font-weight: 650; text-decoration: underline; text-underline-offset: .2em; }
 .contact-direct-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 20px 0 26px; }
