@@ -619,3 +619,47 @@ span[style*="#D4AF37"], span[style*="#d4af37"] { color: var(--pr-gold-bright) !i
   .project-card, .service, .blog-card, .proof-card, .featured-book-card, .livre-card { transition: none; }
   .project-card:hover, .service:hover, .blog-card:hover, .proof-card:hover, .featured-book-card:hover, .livre-card:hover { transform: none; }
 }
+
+/* Ajustement contraste luxe sombre : éviter toute impression pâle ou délavée. */
+:root {
+  --pr-bg: #050607;
+  --pr-paper: #080a0c;
+  --pr-surface: #101215;
+  --pr-surface-raised: #17191d;
+  --pr-line: rgba(214, 168, 79, .20);
+  --pr-gold: #b7832f;
+  --pr-gold-bright: #e1b34f;
+  --pr-gold-soft: rgba(183, 131, 47, .12);
+  --pr-ink: #f0ede6;
+  --pr-ink-soft: #c6c4bd;
+  --pr-muted: #898b8d;
+  --pr-shadow: 0 24px 76px rgba(0,0,0,.58);
+}
+body { background: radial-gradient(circle at 82% -12%, rgba(183,131,47,.045), transparent 28rem), var(--pr-bg); }
+#Header { background: rgba(5,6,7,.94); border-bottom-color: rgba(214,168,79,.12); }
+.Container_NaveBarre .NavBarre { background: rgba(12,14,17,.96); border-color: rgba(214,168,79,.16); box-shadow: 0 16px 40px rgba(0,0,0,.48); }
+#Accueil { background: radial-gradient(circle at 78% 26%, rgba(183,131,47,.055), transparent 24rem), linear-gradient(135deg, #040506 0%, #0a0c0f 58%, #050607 100%); }
+#Accueil::before { border-color: rgba(225,179,79,.24); box-shadow: 0 0 0 48px rgba(183,131,47,.035), 0 0 0 96px rgba(183,131,47,.016); }
+#Accueil-contenu h1 { color: #faf8f2; }
+.hero-eyebrow, #Accueil-contenu .textChangerVisible h2, #Accueil-contenu .textChangerInvisible h2, .hero-role { color: var(--pr-gold-bright) !important; }
+#Accueil-contenu .Texte > p, section p, .section-intro, .texte-ceo p, .project-content p, .book-details--full p:not(.book-edition) { color: var(--pr-ink-soft); }
+#Accueil-contenu .mon-image { border-color: rgba(225,179,79,.38); box-shadow: 14px 14px 0 var(--pr-gold), 0 30px 78px rgba(0,0,0,.70); }
+#Accueil .btn-yellow, .btn-demo, .book-action-links a:first-child, .entity-link, .book-action-link, .contact-form button, .final-cta-actions .btn-yellow { background: linear-gradient(135deg, #e1b34f, #b7832f); color: #090a0b; border-color: #b7832f; box-shadow: 0 12px 32px rgba(183,131,47,.20); }
+#Accueil .btn-yellow-outline, .final-cta-actions .btn-yellow-outline { color: #e1b34f; border-color: rgba(225,179,79,.50); background: rgba(183,131,47,.035); }
+#Accueil .btn-yellow:hover, #Accueil .btn-yellow-outline:hover, .btn-demo:hover, .book-action-links a:hover, .entity-link:hover, .book-action-link:hover, .contact-form button:hover, .final-cta-actions a:hover { background: #edc362; color: #090a0b; border-color: #edc362; }
+a, .hero-aux-links a, .hero-isni a, footer a { color: #e1b34f; }
+#Accueil .social-icon { background: #101215; border-color: #303136; }
+#Accueil .social-icon:hover { background: #b7832f; border-color: #e1b34f; }
+.project-card, .apropos-card, .blog-card, .service, .livre-card, .bande, .bande2, .carte-ceo-pro, .carte-dgclub, .contact-form, .contact-info, .proof-card, .featured-proof, .metrics-strip, .entity-intro, .featured-books, .dgclub-feature, .final-cta { background: linear-gradient(145deg, #16191d, #0d0f12); border-color: rgba(214,168,79,.15); box-shadow: 0 18px 52px rgba(0,0,0,.34); }
+.project-card:hover, .service:hover, .blog-card:hover, .proof-card:hover, .featured-book-card:hover, .livre-card:hover { border-color: rgba(225,179,79,.36); box-shadow: 0 24px 58px rgba(0,0,0,.52); }
+.tech-badge, .identity-badges span { color: #e1b34f; background: rgba(183,131,47,.10); border-color: rgba(183,131,47,.34); }
+.service-price, .proof-label, .proof-link, .book-edition, .section-kicker { color: #e1b34f !important; }
+.texte-dgclub li, #parcours_Scolaire li { background: #111316; color: #c6c4bd; border-color: rgba(255,255,255,.065); }
+#parcours_Scolaire li strong, .texte-dgclub li strong, .metric-card strong { color: #e1b34f; }
+.metric-card { background: #0b0d10; border-color: rgba(214,168,79,.14); }
+.entity-formula { border-left-color: #b7832f; background: rgba(183,131,47,.09); color: #e1b34f !important; }
+.featured-book-card, .book-action-links a, .btn-github, .blog-link { background: #0b0d10; border-color: rgba(255,255,255,.09); }
+.contact-form input, .contact-form textarea { background: #080a0c; border-color: rgba(255,255,255,.13); }
+footer { background: #030405; border-top-color: rgba(214,168,79,.14); }
+.type-switcher__button:hover, .type-switcher__button.is-active { border-color: #b7832f; background: #b7832f; color: #090a0b; }
+span[style*="#D4AF37"], span[style*="#d4af37"] { color: #e1b34f !important; }
