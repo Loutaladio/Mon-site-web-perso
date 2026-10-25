@@ -767,3 +767,6 @@ span[style*="#00F0FF"], span[style*="#00F0FF"] { color: var(--dg-cyan) !importan
 /* Contrat visuel final : aucune tonalité dorée/orange, uniquement la palette DG Club. */
 :root { --pr-gold: var(--dg-cyan); --pr-gold-bright: var(--dg-cyan); }
 [class*="gold"], [class*="Gold"] { color: var(--dg-cyan); border-color: var(--dg-cyan); }
+
+/* Compatibilité avec les anciennes pages : aucune valeur inline dorée ne doit réapparaître. */
+*[style*="#D4AF37"], *[style*="#d4af37"], *[style*="#F0C040"], *[style*="#f0c040"] { color: var(--dg-cyan) !important; }
