@@ -831,3 +831,8 @@ span[style*="#00F0FF"], span[style*="#00F0FF"] { color: var(--dg-cyan) !importan
   #oeuvres .book-card--featured { grid-template-columns: 1fr; gap: 24px; padding: 24px; }
   #oeuvres .book-card--featured .livre-img { width: min(100%, 220px); height: 310px; }
 }
+
+/* Neutralisation demandée : aucun rouge derrière le livre phare ou le portrait. */
+#oeuvres .book-card--featured { box-shadow: 0 24px 70px rgba(0,0,0,.46), 0 0 0 1px rgba(0,240,255,.12); }
+#oeuvres .book-card--featured .livre-img { box-shadow: 16px 16px 0 rgba(0,240,255,.72), 0 22px 44px rgba(0,0,0,.50); }
+#Accueil-contenu .mon-image { box-shadow: 14px 14px 0 rgba(0,240,255,.72), 0 30px 78px rgba(0,0,0,.60) !important; }
