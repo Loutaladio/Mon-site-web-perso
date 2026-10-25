@@ -216,7 +216,7 @@
 :root{
     --main-bg-dark: #0a0a0a;
     --main-bg-light: #f8f9fa;
-    --accent: #FF9E00;
+    --accent: #00F0FF;
     --accent-hover: #00F0FF;
     --nav-bg-dark: #111827;
 }
@@ -333,19 +333,19 @@ img{
 }
 
 @keyframes BordureGlow{
-  2% {box-shadow: 0 0 1px #FBBF24;}
-  25% {box-shadow: 2px 0 2px #FBBF24;}
+  2% {box-shadow: 0 0 1px #00F0FF;}
+  25% {box-shadow: 2px 0 2px #00F0FF;}
   50% {box-shadow: 0 0 8px #FFFFFF;}
-  75% {box-shadow: 2px 0 5px #FBBF24;}
+  75% {box-shadow: 2px 0 5px #00F0FF;}
   100% {box-shadow: 0 3px 8px #fff2;}
   125% {box-shadow: 0 2px 20px #FFFFFF;}
 }
 
 @keyframes floaw{
-  2% {box-shadow: 0 0px 5px #FBBF24;}
-  25% {box-shadow: -2px 0 7px #FBBF24;}
+  2% {box-shadow: 0 0px 5px #00F0FF;}
+  25% {box-shadow: -2px 0 7px #00F0FF;}
   50% {box-shadow: 0 0 25px #FFFFFF;}
-  75% {box-shadow: 0 0 7px #FBBF24;}
+  75% {box-shadow: 0 0 7px #00F0FF;}
   100% {box-shadow: 2px 0 35px rgba(134, 161, 160, 0.986);}
 }
 
@@ -357,14 +357,14 @@ img{
 
 
 .NavBarre a:hover{
-    color: #FBBF24;
+    color: #00F0FF;
 }
 /* Fin partie Header */
 
 /* SECTION Accueil */
 /* partie Main section= Accueil, Accueil contenu, Accueil-sc1 */
 .Accueil{
-  background: linear-gradient(120deg, #111 60%, #FF9E00 100%);
+  background: linear-gradient(120deg, #111 60%, #00F0FF 100%);
   padding: 4rem 2rem 2rem 2rem;
   animation: fadeIn 1.2s ease;
   display: flex;
@@ -425,7 +425,7 @@ img{
   border: 6px solid white;
   box-shadow: 0 4px 24px rgba(0,0,0,0.2);
   object-fit: cover;
-  background: #FF9E00;
+  background: #00F0FF;
   margin-right: 0;
   margin-left: 0;
   animation: chargeImg 1s ease forwards;
@@ -566,13 +566,13 @@ p{
         .btn-yellow:hover {
             background: #fff;
             color: #10182a;
-            box-shadow: 0 0 18px 0#FF9E00;
+            box-shadow: 0 0 18px 0#00F0FF;
         }
         .btn-yellow-outline {
             background: transparent;
-            color: #FF9E00;
+            color: #00F0FF;
             font-weight: 700;
-            border: 2px solid #FF9E00;
+            border: 2px solid #00F0FF;
             border-radius: 2rem;
             padding: 0.7rem 1.7rem;
             font-size: 1.08rem;
@@ -580,9 +580,9 @@ p{
             transition: background 0.18s, color 0.18s, box-shadow 0.18s;
         }
         .btn-yellow-outline:hover {
-            background: #FF9E00;
+            background: #00F0FF;
             color: #10182a;
-            box-shadow: 0 0 18px 0 #FF9E00;
+            box-shadow: 0 0 18px 0 #00F0FF;
         }
 
     /* ligen de couleur */
@@ -693,7 +693,7 @@ section[id] {
   border-radius: 3rem;
   display: flex;
   align-items: flex-start;
-  border-left: 5px solid #FF9E00;
+  border-left: 5px solid #00F0FF;
   padding: 18px;
   /* max-width: 800px;
   margin: 40px auto; */
@@ -720,7 +720,7 @@ section[id] {
 .texte-ceo h3 {
   margin: 0 0 6px;
   font-size: 24px;
-  color: #FF9E00;
+  color: #00F0FF;
 }
 
 .texte-ceo p {
@@ -989,7 +989,7 @@ section[id] {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, #FBBF24, #F59E0B, #D97706);
+    background: linear-gradient(90deg, #00F0FF, #01035D, #01035D);
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
@@ -1043,7 +1043,7 @@ section[id] {
 }
 
 .project-tech {
-    color: #FBBF24;
+    color: #00F0FF;
     font-size: 0.9rem;
     font-weight: 600;
     margin-bottom: 1rem;
@@ -1056,7 +1056,7 @@ section[id] {
 
 .tech-badge {
     background: rgba(251,191,36,0.1);
-    color: #FBBF24;
+    color: #00F0FF;
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
     font-size: 0.8rem;
@@ -1102,13 +1102,13 @@ section[id] {
 }
 
 .btn-demo {
-    background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 100%);
+    background: linear-gradient(135deg, #00F0FF 0%, #01035D 100%);
     color: #000;
-    border: 1px solid #FBBF24;
+    border: 1px solid #00F0FF;
 }
 
 .btn-demo:hover {
-    background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+    background: linear-gradient(135deg, #01035D 0%, #01035D 100%);
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(251,191,36,0.3);
 }
@@ -1508,7 +1508,7 @@ section[id] {
     padding: 20px;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 15px;
-    border: 1px solid rgba(255, 158, 0, 0.3);
+    border: 1px solid rgba(0, 240, 255, 0.3);
 }
 
 .video-section iframe {
@@ -1564,8 +1564,8 @@ section[id] {
 
 .hamburger.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
-    background: #FBBF24;
-    box-shadow: 0 0 10px #FBBF24;
+    background: #00F0FF;
+    box-shadow: 0 0 10px #00F0FF;
 }
 
 .hamburger.active span:nth-child(2) {
@@ -1574,8 +1574,8 @@ section[id] {
 
 .hamburger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -6px);
-    background: #FBBF24;
-    box-shadow: 0 0 10px #FBBF24;
+    background: #00F0FF;
+    box-shadow: 0 0 10px #00F0FF;
 }
 
 /* RESPONSIVE NAV */
@@ -1658,10 +1658,10 @@ section[id] {
 .story-lead {
     font-size: 1.2em;
     font-style: italic;
-    color: #FF9E00;
-    border-left: 5px solid #FF9E00;
+    color: #00F0FF;
+    border-left: 5px solid #00F0FF;
     padding-left: 20px;
-    background: rgba(255, 158, 0, 0.1);
+    background: rgba(0, 240, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
     margin: 20px 0;
@@ -1673,12 +1673,12 @@ section[id] {
 }
 
 .story-highlight {
-    background: linear-gradient(135deg, rgba(255, 158, 0, 0.1), rgba(0, 0, 0, 0.1));
+    background: linear-gradient(135deg, rgba(0, 240, 255, 0.1), rgba(0, 0, 0, 0.1));
     padding: 30px;
     border-radius: 15px;
     margin: 30px 0;
-    border: 2px solid rgba(255, 158, 0, 0.3);
-    box-shadow: 0 0 20px rgba(255, 158, 0, 0.2);
+    border: 2px solid rgba(0, 240, 255, 0.3);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
 }
 
 .story-achievements {
@@ -1692,26 +1692,26 @@ section[id] {
     padding: 15px;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 10px;
-    border-left: 4px solid #FF9E00;
+    border-left: 4px solid #00F0FF;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .story-achievements li:hover {
     transform: translateX(10px);
-    box-shadow: 0 5px 15px rgba(255, 158, 0, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 240, 255, 0.3);
 }
 
 .story-conclusion {
     text-align: center;
     margin-top: 30px;
     padding: 20px;
-    background: rgba(255, 158, 0, 0.1);
+    background: rgba(0, 240, 255, 0.1);
     border-radius: 10px;
-    border: 1px solid rgba(255, 158, 0, 0.5);
+    border: 1px solid rgba(0, 240, 255, 0.5);
 }
 
 .story-conclusion strong {
-    color: #FF9E00;
+    color: #00F0FF;
     font-size: 1.1em;
 }
 

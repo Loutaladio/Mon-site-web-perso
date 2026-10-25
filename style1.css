@@ -32,7 +32,7 @@ nav ul li a {
 
 nav ul li a:hover,
 .active {
-  color: #ffcc00;
+  color: #00F0FF;
 }
 
 .container {
@@ -62,7 +62,7 @@ button {
 }
 
 button:hover {
-  background: #ffcc00;
+  background: #00F0FF;
   color: #000;
 }
 
