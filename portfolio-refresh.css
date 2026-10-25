@@ -513,3 +513,28 @@ footer a:hover { color: #ffffff; }
   transform: none;
   transition: none;
 }
+
+
+/* Comparateur typographique : direction active par défaut = Tech premium. */
+body, #Accueil-contenu .Texte > p, section p { font-family: Inter, "Segoe UI", Arial, sans-serif; }
+h1, h2, h3, h4, .section-title, .nav-brand, .metric-card strong { font-family: "Space Grotesk", Inter, "Segoe UI", sans-serif; }
+#Accueil-contenu h1 { font-weight: 700; letter-spacing: -0.045em; }
+.section-title, section h2:not(.section-title) { letter-spacing: -0.035em; }
+.type-switcher { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0 0 20px; }
+.type-switcher > span { flex: 0 0 100%; color: #a9a9a9; font-size: .78rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
+.type-switcher__button { min-height: 36px; padding: 7px 12px; border: 1px solid #595959; border-radius: 999px; background: #171717; color: #d8d8d8; font: 600 .82rem/1.2 Inter, sans-serif; cursor: pointer; }
+.type-switcher__button:hover, .type-switcher__button.is-active { border-color: #D4AF37; background: #D4AF37; color: #080808; }
+html[data-typography="editorial"] h1,
+html[data-typography="editorial"] h2,
+html[data-typography="editorial"] h3,
+html[data-typography="editorial"] h4,
+html[data-typography="editorial"] .section-title,
+html[data-typography="editorial"] .nav-brand,
+html[data-typography="editorial"] .metric-card strong { font-family: "Playfair Display", Georgia, serif; }
+html[data-typography="editorial"] #Accueil-contenu h1 { font-weight: 700; letter-spacing: -0.035em; line-height: 1.02; }
+html[data-typography="editorial"] .section-title,
+html[data-typography="editorial"] section h2:not(.section-title) { letter-spacing: -0.02em; }
+@media (max-width: 600px) {
+  .type-switcher { margin-bottom: 16px; }
+  .type-switcher__button { min-height: 40px; }
+}

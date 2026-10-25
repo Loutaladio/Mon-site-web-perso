@@ -71,3 +71,22 @@ function submitContactForm(event) {
     event.preventDefault();
     alert('Formulaire envoyé ! (À connecter à un service backend)');
 }
+
+// Comparateur de directions typographiques : préférence mémorisée pour comparer les deux maquettes.
+(function () {
+    const root = document.documentElement;
+    const buttons = document.querySelectorAll('[data-typography-choice]');
+    const saved = window.localStorage.getItem('portfolio-typography') || 'tech';
+    const applyTypography = (choice) => {
+        const selected = choice === 'editorial' ? 'editorial' : 'tech';
+        root.dataset.typography = selected;
+        buttons.forEach(button => {
+            const active = button.dataset.typographyChoice === selected;
+            button.classList.toggle('is-active', active);
+            button.setAttribute('aria-pressed', String(active));
+        });
+        window.localStorage.setItem('portfolio-typography', selected);
+    };
+    applyTypography(saved);
+    buttons.forEach(button => button.addEventListener('click', () => applyTypography(button.dataset.typographyChoice)));
+}());
