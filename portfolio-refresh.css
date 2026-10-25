@@ -747,3 +747,19 @@ span[style*="#D4AF37"], span[style*="#d4af37"] { color: var(--dg-cyan) !importan
   .project-filter { gap: 8px; padding: 12px; }
   .project-filter__button { flex: 1 1 auto; min-width: 42%; }
 }
+
+/* Accessibilité des hyperliens : contraste renforcé dans le menu mobile et les zones interactives. */
+.NavBarre a, .Container_NaveBarre #NavBarre2 a, .project-links a, .proof-link, .blog-link { text-decoration-thickness: .08em; text-underline-offset: .18em; }
+@media (max-width: 860px) {
+  .NavBarre ul,
+  .NavBarre ul.active { background: var(--dg-maritime-deep); border-color: rgba(0,240,255,.28); box-shadow: 0 22px 54px rgba(0,0,0,.58); }
+  .NavBarre ul li a,
+  .NavBarre ul li a:visited,
+  .Container_NaveBarre #NavBarre2 a { color: var(--dg-white) !important; background: transparent; }
+  .NavBarre ul li a:hover,
+  .NavBarre ul li a:focus-visible { color: var(--dg-maritime-deep) !important; background: var(--dg-cyan); }
+  .NavBarre ul li:first-child a,
+  .NavBarre ul li:first-child a:visited { color: var(--dg-maritime-deep) !important; background: var(--dg-cyan); }
+  .NavBarre ul li:first-child a:hover,
+  .NavBarre ul li:first-child a:focus-visible { color: var(--dg-maritime-deep) !important; background: #fff; }
+}
