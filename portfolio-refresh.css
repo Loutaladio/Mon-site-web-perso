@@ -811,3 +811,23 @@ span[style*="#00F0FF"], span[style*="#00F0FF"] { color: var(--dg-cyan) !importan
 #origin-story .story-conclusion { border-top: 1px solid rgba(0,240,255,.18); background: rgba(0,240,255,.055); border-radius: 16px; padding: 18px 20px; }
 #origin-story .story-conclusion strong { color: var(--dg-white) !important; }
 #origin-story .story-achievements li { border-left-color: var(--dg-red) !important; }
+
+/* Ouvrage phare : Invisible sur Google devient le point focal de la page Livres. */
+#oeuvres .livres-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px; }
+#oeuvres .book-card--featured { grid-column: 1 / -1; grid-template-columns: minmax(220px, 300px) minmax(0, 1fr); align-items: center; gap: clamp(28px, 5vw, 72px); padding: clamp(28px, 5vw, 60px); border: 1px solid rgba(0,240,255,.48); background: radial-gradient(circle at 12% 20%, rgba(0,240,255,.12), transparent 22rem), linear-gradient(135deg, #0b1157, #000329 72%); box-shadow: 0 24px 70px rgba(0,0,0,.46), 0 0 0 1px rgba(230,1,1,.10); }
+#oeuvres .book-card--featured .livre-img { width: min(100%, 260px); height: 360px; margin-inline: auto; border: 1px solid rgba(0,240,255,.42); box-shadow: 16px 16px 0 var(--dg-red), 0 22px 44px rgba(0,0,0,.50); }
+#oeuvres .book-card--featured .book-featured-badge { margin: 0 0 10px !important; color: var(--dg-cyan) !important; font-size: .78rem !important; font-weight: 850; letter-spacing: .14em; text-transform: uppercase; }
+#oeuvres .book-card--featured .book-details--full h3 { max-width: 720px; margin-bottom: 16px; font-size: clamp(1.65rem, 3vw, 2.65rem); line-height: 1.05; letter-spacing: -.055em; }
+#oeuvres .book-card--featured .book-details--full p:not(.book-edition):not(.book-featured-badge) { max-width: 680px; font-size: 1.05rem; line-height: 1.8; }
+#oeuvres .book-card--featured .book-action-links { margin-top: 24px; }
+#oeuvres .book-card--featured .book-action-links a:first-child { background: var(--dg-cyan); color: var(--dg-maritime-deep); }
+#oeuvres .book-card--featured .book-action-links a:last-child { border-color: rgba(0,240,255,.36); color: var(--dg-cyan); }
+@media (max-width: 1100px) {
+  #oeuvres .livres-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #oeuvres .book-card--featured { grid-template-columns: minmax(180px, 240px) minmax(0, 1fr); gap: 28px; }
+}
+@media (max-width: 720px) {
+  #oeuvres .livres-list { grid-template-columns: 1fr; }
+  #oeuvres .book-card--featured { grid-template-columns: 1fr; gap: 24px; padding: 24px; }
+  #oeuvres .book-card--featured .livre-img { width: min(100%, 220px); height: 310px; }
+}
