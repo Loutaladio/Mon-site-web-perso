@@ -90,3 +90,23 @@ function submitContactForm(event) {
     applyTypography(saved);
     buttons.forEach(button => button.addEventListener('click', () => applyTypography(button.dataset.typographyChoice)));
 }());
+
+// Filtre projets : permet une lecture rapide par famille de réalisation.
+(function () {
+    const buttons = document.querySelectorAll('[data-project-filter]');
+    const cards = document.querySelectorAll('.project-card[data-category]');
+    if (!buttons.length || !cards.length) return;
+    buttons.forEach(button => button.addEventListener('click', () => {
+        const filter = button.dataset.projectFilter;
+        buttons.forEach(item => {
+            const active = item === button;
+            item.classList.toggle('is-active', active);
+            item.setAttribute('aria-pressed', String(active));
+        });
+        cards.forEach(card => {
+            const categories = (card.dataset.category || '').split(/\s+/);
+            const visible = filter === 'all' || categories.includes(filter);
+            card.hidden = !visible;
+        });
+    }));
+}());

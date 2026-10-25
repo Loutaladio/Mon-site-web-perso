@@ -627,9 +627,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section id="projets">
             <h2 class="section-title">Mes Projets</h2>
             <p class="section-intro">Découvrez une sélection de mes projets récents en développement web, en rédaction et autres. Chaque projet reflète ma passion pour l'innovation numérique et l'excellence.</p>
+            <div class="project-filter" role="toolbar" aria-label="Filtrer les projets"><span class="project-filter__label">Explorer par expertise</span><button type="button" class="project-filter__button is-active" data-project-filter="all" aria-pressed="true">Tout voir</button><button type="button" class="project-filter__button" data-project-filter="sites" aria-pressed="false">Sites web</button><button type="button" class="project-filter__button" data-project-filter="apps" aria-pressed="false">Applications</button><button type="button" class="project-filter__button" data-project-filter="identity" aria-pressed="false">Identité numérique</button><button type="button" class="project-filter__button" data-project-filter="books" aria-pressed="false">Édition</button><button type="button" class="project-filter__button" data-project-filter="academic" aria-pressed="false">Académique</button></div>
             <div class="projects-grid">
 
-                <article class="project-card" itemscope itemtype="https://schema.org/WebSite">
+                <article class="project-card" data-category="sites" itemscope itemtype="https://schema.org/WebSite">
                     <div class="project-image">
                         <img src="Media/Projet_Entre-Prieur.png" alt="Site web Entre'Prieur - Communauté d'entrepreneurs chrétiens" loading="lazy">
                     </div>
@@ -650,7 +651,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </article>
 
-                <article class="project-card" itemscope itemtype="https://schema.org/SoftwareApplication">
+                <article class="project-card" data-category="sites" itemscope itemtype="https://schema.org/SoftwareApplication">
                     <div class="project-image">
                         <img src="Media/Capture d’écran 2026-02-22 132207.png" alt="Portfolio Loutaladio Danick Arcel" loading="lazy">
                     </div>
@@ -669,7 +670,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </article>
 
-                <article class="project-card" itemscope itemtype="https://schema.org/Book">
+                <article class="project-card" data-category="books identity" itemscope itemtype="https://schema.org/Book">
                     <div class="project-image">
                         <img src="Media/amazon-books/invisible-sur-google-cover-2026.png" alt="Couverture du livre Invisible sur Google de LOUTALADIO Danick Arcel" width="585" height="888" loading="lazy">
                     </div>
@@ -687,7 +688,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </article>
 
-                <article class="project-card" itemscope itemtype="https://schema.org/Book">
+                <article class="project-card" data-category="books" itemscope itemtype="https://schema.org/Book">
                     <div class="project-image">
                         <img src="Media/cover.jpeg" alt="Guide Ultime d'Orientation en Génie Informatique" loading="lazy">
                     </div>
@@ -725,7 +726,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </article>
 
 
-                <article class="project-card" itemscope itemtype="https://schema.org/Organization">
+                <article class="project-card" data-category="identity sites" itemscope itemtype="https://schema.org/Organization">
                     <div class="project-image">
                         <img src="Media/banniere_DG_Club.jpeg" alt="DG Club, projet numérique fondé à Pointe-Noire" loading="lazy">
                     </div>
@@ -746,7 +747,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </article>
 
 
-                <article class="project-card" itemscope itemtype="https://schema.org/WebPage">
+                <article class="project-card" data-category="sites academic" itemscope itemtype="https://schema.org/WebPage">
                     <div class="project-image">
                         <img src="Media/ProjePortfolioPourMoi.png" alt="Portfolio Étudiante BTS SIO SISR" loading="lazy">
                     </div>
@@ -767,7 +768,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </article>
 
 
-                <article class="project-card" itemscope itemtype="https://schema.org/SoftwareApplication">
+                <article class="project-card" data-category="apps" itemscope itemtype="https://schema.org/SoftwareApplication">
                     <div class="project-image">
                         <img src="Media/MaquetteFigmaProjet_ZietaBus.png" alt="Application Achat Tickets Bus" loading="lazy">
                     </div>
@@ -786,6 +787,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </article>
 
 
+                <article class="project-card" data-category="sites" itemscope itemtype="https://schema.org/WebSite">
+                    <div class="project-image"><img src="Media/project-captures/diali-ai.webp" alt="Interface du site Diali AI" loading="lazy"></div>
+                    <div class="project-content"><p class="project-kicker">Site web · IA & sourcing</p><h3 itemprop="name">Diali AI</h3><p class="project-tech"><span class="tech-badge">Next.js</span><span class="tech-badge">Inter</span><span class="tech-badge">Responsive</span></p><p itemprop="description">Site web moderne pour présenter Diali AI, son positionnement et son expérience de sourcing. Travail orienté clarté, hiérarchie de contenu et conversion.</p><div class="project-links"><a href="https://github.com/Loutaladio/Diali-AI_Site_Web" target="_blank" rel="noopener noreferrer" class="btn-github">Voir sur GitHub</a></div></div>
+                </article>
+                <article class="project-card" data-category="sites identity" itemscope itemtype="https://schema.org/WebSite">
+                    <div class="project-image"><img src="Media/project-captures/mountou-ben-riche.jpg" alt="Visuel du site professionnel de Mountou Ben-Riche" loading="lazy"></div>
+                    <div class="project-content"><p class="project-kicker">Site web · Personal branding</p><h3 itemprop="name">Mountou Ben-Riche</h3><p class="project-tech"><span class="tech-badge">HTML5</span><span class="tech-badge">CSS3</span><span class="tech-badge">SEO</span></p><p itemprop="description">Site professionnel conçu pour structurer la présence en ligne de MOUNT​OU Ben-Riche, auteur et dirigeant de FBE Technologies.</p><div class="project-links"><a href="https://mountoubenriche.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-demo">Voir le site</a><a href="https://github.com/Loutaladio/Mountou_Ben-Riche" target="_blank" rel="noopener noreferrer" class="btn-github">Voir sur GitHub</a></div></div>
+                </article>
             </div>
         </section>
 <center><a style="color: white; font-size: 12px;" href="https://loutaladiodanickarcel.vercel.app/projets.html">Voir plus</a></center>

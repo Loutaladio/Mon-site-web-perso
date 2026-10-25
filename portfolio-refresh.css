@@ -730,3 +730,20 @@ footer p { color: var(--dg-text-soft); }
 .featured-proof { border-top: 3px solid var(--dg-red); }
 .type-switcher__button:hover, .type-switcher__button.is-active { border-color: var(--dg-cyan); background: var(--dg-cyan); color: var(--dg-maritime-deep); }
 span[style*="#D4AF37"], span[style*="#d4af37"] { color: var(--dg-cyan) !important; }
+
+/* Navigation des projets : lecture par expertise, pensée pour les recruteurs et clients. */
+.project-filter { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 26px 0 4px; padding: 14px; border: 1px solid rgba(0,240,255,.16); border-radius: 16px; background: rgba(0,3,41,.56); }
+.project-filter__label { flex: 0 0 100%; color: var(--dg-text-soft); font-size: .76rem; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
+.project-filter__button { min-height: 38px; padding: 8px 14px; border: 1px solid rgba(0,240,255,.22); border-radius: 999px; background: transparent; color: var(--dg-text-soft); font: 700 .82rem/1 Inter, Arial, sans-serif; cursor: pointer; transition: background .2s ease, color .2s ease, border-color .2s ease, transform .2s ease; }
+.project-filter__button:hover, .project-filter__button:focus-visible { border-color: var(--dg-cyan); color: var(--dg-cyan); transform: translateY(-1px); }
+.project-filter__button.is-active { background: var(--dg-cyan); border-color: var(--dg-cyan); color: var(--dg-maritime-deep); }
+.project-card[hidden] { display: none; }
+.project-kicker { margin: 0 0 9px !important; color: var(--dg-cyan) !important; font-size: .73rem !important; font-weight: 800; letter-spacing: .10em; text-transform: uppercase; }
+.project-image { background: var(--dg-maritime-deep); }
+.project-image img { object-fit: cover; }
+.project-card[data-category~="apps"] .project-image img[src*="sepulta"] { object-fit: contain; padding: 28px; background: #fff; }
+.project-card[data-category~="identity"] .project-image img { object-position: center; }
+@media (max-width: 600px) {
+  .project-filter { gap: 8px; padding: 12px; }
+  .project-filter__button { flex: 1 1 auto; min-width: 42%; }
+}
