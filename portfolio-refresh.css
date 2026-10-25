@@ -663,3 +663,70 @@ a, .hero-aux-links a, .hero-isni a, footer a { color: #e1b34f; }
 footer { background: #030405; border-top-color: rgba(214,168,79,.14); }
 .type-switcher__button:hover, .type-switcher__button.is-active { border-color: #b7832f; background: #b7832f; color: #090a0b; }
 span[style*="#D4AF37"], span[style*="#d4af37"] { color: #e1b34f !important; }
+
+/* Synchronisation officielle avec le Brand Book DG Club — Inter / Maritime Blue / Cyan Blue / Poppy Red. */
+:root {
+  --dg-maritime: #01035d;
+  --dg-maritime-deep: #000329;
+  --dg-cyan: #00f0ff;
+  --dg-red: #e60101;
+  --dg-white: #ffffff;
+  --dg-text-soft: #c8d3f4;
+  --dg-surface: #070b45;
+  --dg-surface-raised: #0b1157;
+  --dg-line: rgba(0,240,255,.20);
+  --pr-bg: var(--dg-maritime-deep);
+  --pr-paper: var(--dg-maritime-deep);
+  --pr-surface: var(--dg-surface);
+  --pr-surface-raised: var(--dg-surface-raised);
+  --pr-gold: var(--dg-cyan);
+  --pr-gold-bright: var(--dg-cyan);
+  --pr-gold-soft: rgba(0,240,255,.10);
+  --pr-ink: var(--dg-white);
+  --pr-ink-soft: var(--dg-text-soft);
+  --pr-line: var(--dg-line);
+}
+html { background: var(--dg-maritime-deep); }
+body {
+  background: radial-gradient(circle at 84% -8%, rgba(0,240,255,.10), transparent 28rem), radial-gradient(circle at -8% 72%, rgba(230,1,1,.06), transparent 24rem), var(--dg-maritime-deep);
+  color: var(--dg-white);
+}
+body, body p, body li, body label, body input, body textarea, body button { font-family: Inter, Arial, sans-serif; }
+h1, h2, h3, h4, h5, h6, .section-title, .nav-brand, .metric-card strong { font-family: Inter, Arial, sans-serif; font-weight: 800; letter-spacing: -.045em; }
+#Header { background: rgba(0,3,41,.90); border-bottom-color: rgba(0,240,255,.18); }
+.Container_NaveBarre .NavBarre { background: rgba(1,3,93,.92); border-color: rgba(0,240,255,.22); box-shadow: 0 16px 42px rgba(0,0,0,.42); }
+.NavBarre a, .Container_NaveBarre #NavBarre2 a { color: var(--dg-white); }
+.NavBarre a:hover, .NavBarre a:focus-visible { color: var(--dg-maritime-deep); background: var(--dg-cyan); }
+.NavBarre ul li:first-child a, .NavBarre ul li:first-child a:hover { color: var(--dg-maritime-deep) !important; background: var(--dg-cyan); }
+.nav-brand { color: var(--dg-white) !important; }
+.nav-monogram { background: var(--dg-cyan); color: var(--dg-maritime-deep); box-shadow: 0 0 0 5px rgba(0,240,255,.12); }
+#Accueil { background: radial-gradient(circle at 78% 28%, rgba(0,240,255,.12), transparent 25rem), linear-gradient(135deg, #000329 0%, #01035d 62%, #000329 100%); }
+#Accueil::before { border-color: rgba(0,240,255,.34); box-shadow: 0 0 0 48px rgba(0,240,255,.055), 0 0 0 96px rgba(230,1,1,.025); }
+#Accueil-contenu h1 { color: var(--dg-white); }
+.hero-eyebrow, #Accueil-contenu .textChangerVisible h2, #Accueil-contenu .textChangerInvisible h2, .hero-role { color: var(--dg-cyan) !important; }
+.hero-eyebrow { letter-spacing: .12em; }
+#Accueil-contenu .Texte > p, section p, .section-intro, .texte-ceo p, .project-content p, .book-details--full p:not(.book-edition) { color: var(--dg-text-soft); }
+#Accueil-contenu .mon-image { border-color: rgba(0,240,255,.65); box-shadow: 14px 14px 0 var(--dg-red), 0 30px 78px rgba(0,0,0,.60); }
+#Accueil .btn-yellow, .btn-demo, .book-action-links a:first-child, .entity-link, .book-action-link, .contact-form button, .final-cta-actions .btn-yellow { background: var(--dg-cyan); color: var(--dg-maritime-deep); border-color: var(--dg-cyan); box-shadow: 0 12px 32px rgba(0,240,255,.18); }
+#Accueil .btn-yellow-outline, .final-cta-actions .btn-yellow-outline { color: var(--dg-cyan); border-color: rgba(0,240,255,.58); background: rgba(0,240,255,.04); }
+#Accueil .btn-yellow:hover, #Accueil .btn-yellow-outline:hover, .btn-demo:hover, .book-action-links a:hover, .entity-link:hover, .book-action-link:hover, .contact-form button:hover, .final-cta-actions a:hover { background: #fff; color: var(--dg-maritime-deep); border-color: #fff; }
+a, .hero-aux-links a, .hero-isni a, footer a { color: var(--dg-cyan); }
+#Accueil .social-icon { background: rgba(1,3,93,.68); border-color: rgba(0,240,255,.22); color: var(--dg-white); }
+#Accueil .social-icon:hover { background: var(--dg-cyan); color: var(--dg-maritime-deep); border-color: var(--dg-cyan); }
+section, .case-studies { color: var(--dg-white); }
+.section-title, section h2:not(.section-title), section h3, section h4 { color: var(--dg-white); }
+.project-card, .apropos-card, .blog-card, .service, .livre-card, .bande, .bande2, .carte-ceo-pro, .carte-dgclub, .contact-form, .contact-info, .proof-card, .featured-proof, .metrics-strip, .entity-intro, .featured-books, .dgclub-feature, .final-cta { background: linear-gradient(145deg, var(--dg-surface-raised), var(--dg-surface)); border-color: var(--dg-line); box-shadow: 0 18px 52px rgba(0,0,0,.30); }
+.project-card:hover, .service:hover, .blog-card:hover, .proof-card:hover, .featured-book-card:hover, .livre-card:hover { border-color: rgba(0,240,255,.62); box-shadow: 0 24px 58px rgba(0,0,0,.46); }
+.tech-badge, .identity-badges span { color: var(--dg-cyan); background: rgba(0,240,255,.08); border-color: rgba(0,240,255,.34); }
+.service-price, .proof-label, .proof-link, .book-edition, .section-kicker { color: var(--dg-cyan) !important; }
+.texte-dgclub li, #parcours_Scolaire li { background: rgba(0,3,41,.72); color: var(--dg-text-soft); border-color: rgba(0,240,255,.12); }
+#parcours_Scolaire li strong, .texte-dgclub li strong, .metric-card strong { color: var(--dg-cyan); }
+.metric-card { background: rgba(0,3,41,.72); border-color: rgba(0,240,255,.16); }
+.entity-formula { border-left-color: var(--dg-red); background: rgba(230,1,1,.09); color: var(--dg-white) !important; }
+.featured-book-card, .book-action-links a, .btn-github, .blog-link { background: rgba(0,3,41,.72); border-color: rgba(0,240,255,.13); }
+.contact-form input, .contact-form textarea { background: var(--dg-maritime-deep); color: var(--dg-white); border-color: rgba(0,240,255,.20); }
+footer { background: #00021e; border-top-color: rgba(0,240,255,.20); }
+footer p { color: var(--dg-text-soft); }
+.featured-proof { border-top: 3px solid var(--dg-red); }
+.type-switcher__button:hover, .type-switcher__button.is-active { border-color: var(--dg-cyan); background: var(--dg-cyan); color: var(--dg-maritime-deep); }
+span[style*="#D4AF37"], span[style*="#d4af37"] { color: var(--dg-cyan) !important; }
